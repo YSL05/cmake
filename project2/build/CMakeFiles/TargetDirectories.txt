@@ -1,0 +1,3 @@
+/Users/onepiece/Project/temp/project2/build/CMakeFiles/main2.dir
+/Users/onepiece/Project/temp/project2/build/CMakeFiles/edit_cache.dir
+/Users/onepiece/Project/temp/project2/build/CMakeFiles/rebuild_cache.dir
