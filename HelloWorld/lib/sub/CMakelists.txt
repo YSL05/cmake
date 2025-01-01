@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.9)
+
+# search the src files 
+aux_source_directory(./src SRC)
+
+# generate lib
+add_library(sub STATIC ${SRC})
+
+# add the include path
+target_include_directories(sub PRIVATE ./inc)

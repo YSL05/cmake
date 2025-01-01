@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.9)
+
+# set the project name
+project(HelloWorld_add_sub)
+
+# set the path of the output execuable
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+# add sub_dir
+add_subdirectory(lib)
+
+# add the executable
+add_executable(HelloWorld_add_sub main.c)
+
+# set the include path
+set(add_inc ${PROJECT_SOURCE_DIR}/lib/add/inc)
+set(sub_inc ${PROJECT_SOURCE_DIR}/lib/sub/inc)
+
+# add the inc path
+target_include_directories(HelloWorld_add_sub PRIVATE ${add_inc} ${sub_inc})
+
+# add the link library
+target_link_libraries(HelloWorld_add_sub add sub)
